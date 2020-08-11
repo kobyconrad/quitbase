@@ -3,14 +3,17 @@ import { StyleSheet } from "react-native";
 
 import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
+import Button from "../components/button";
+
+let number = Math.random() * 100;
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Not smoking is hard.</Text>
+      <Text style={styles.title}>Step One: Fix short term memory.</Text>
 
-      {/* <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabTwoScreen.tsx" /> */}
+      <Text style={styles.title}>{number}</Text>
+      <Button />
     </View>
   );
 }
